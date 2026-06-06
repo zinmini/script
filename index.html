@@ -15,101 +15,93 @@
 }
 
 body{
-    background:radial-gradient(circle at top,#2b1055,#050509 70%);
     min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
+    background:#050510;
+    background-image:
+    radial-gradient(circle at center,#25104a 0%,#050510 70%);
     color:white;
 }
 
 .card{
     width:90%;
-    max-width:500px;
-    background:#0d0d17;
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:30px;
+    max-width:420px;
+    background:#090915;
+    border:1px solid rgba(255,255,255,.05);
+    border-radius:32px;
     padding:35px 25px;
     text-align:center;
-    box-shadow:0 0 40px rgba(155,77,255,.35);
+    box-shadow:0 0 30px rgba(168,85,247,.25);
 }
 
 .avatar{
-    width:150px;
-    height:150px;
+    width:120px;
+    height:120px;
     border-radius:50%;
     object-fit:cover;
     border:5px solid #a855f7;
-    box-shadow:0 0 30px #a855f7;
+    box-shadow:0 0 25px #a855f7;
 }
 
 .link-box{
     margin:20px auto;
-    padding:10px 20px;
+    padding:12px 20px;
     border-radius:999px;
-    background:#161624;
-    color:#a78bfa;
+    background:#121225;
+    border:1px solid rgba(168,85,247,.2);
+    color:#8b7cff;
+    font-size:15px;
     display:inline-block;
-    font-size:16px;
 }
 
 .title{
-    font-size:42px;
+    font-size:34px;
     font-weight:800;
     margin-top:10px;
     margin-bottom:15px;
 }
 
 .desc{
-    color:#d1d5db;
-    font-size:22px;
-    line-height:1.7;
+    color:#bdbdbd;
+    font-size:18px;
+    line-height:1.8;
 }
 
 .progress{
     width:100%;
     height:8px;
-    background:#202033;
+    background:#1e1e30;
     border-radius:999px;
     overflow:hidden;
     margin:30px 0;
 }
 
 .progress-bar{
-    width:55%;
+    width:40%;
     height:100%;
     background:linear-gradient(90deg,#5865F2,#c084fc);
-    animation:load 3s linear infinite;
-}
-
-@keyframes load{
-    0%{width:10%}
-    100%{width:100%}
 }
 
 .discord-btn{
     display:block;
     width:100%;
     padding:18px;
-    border-radius:18px;
+    border-radius:20px;
     text-decoration:none;
     background:#5865F2;
     color:white;
-    font-size:24px;
+    font-size:22px;
     font-weight:bold;
-    box-shadow:0 0 25px rgba(88,101,242,.6);
-    transition:.3s;
-}
-
-.discord-btn:hover{
-    transform:scale(1.03);
+    box-shadow:0 0 25px rgba(88,101,242,.5);
 }
 
 .footer{
     margin-top:25px;
-    color:#777;
-    letter-spacing:3px;
+    color:#555;
     font-size:12px;
+    letter-spacing:3px;
 }
 </style>
 </head>
@@ -118,39 +110,42 @@ body{
 
 <div class="card">
 
-    <img src="51CF07E0-D246-4D4C-98A8-C0EDD9DC4F14.png" class="avatar">
+<img
+class="avatar"
+src="51CF07E0-D246-4D4C-98A8-C0EDD9DC4F14.png"
+alt="avatar">
 
-    <div class="link-box">
-        ● discord.gg/kSp3z3crwa
-    </div>
+<div class="link-box">
+● discord.gg/kSp3z3crwa
+</div>
 
-    <div class="title">
-        ZINMINI SHOP
-    </div>
+<div class="title">
+ZINMINI SHOP
+</div>
 
-    <div class="desc">
-        Chào cậu, mình là zinmini Shop.
-        Click để tham gia server Discord của mình nhé! 💜
-    </div>
+<div class="desc">
+Chào cậu, mình là zinmini Shop.<br>
+Click để tham gia server Discord của mình nhé! 💜
+</div>
 
-    <div class="progress">
-        <div class="progress-bar"></div>
-    </div>
+<div class="progress">
+<div class="progress-bar"></div>
+</div>
 
-    <a class="discord-btn"
-       href="https://discord.gg/kSp3z3crwa">
-       🎮 Tham gia Discord
-    </a>
+<a class="discord-btn"
+href="https://discord.gg/kSp3z3crwa">
+🎮 Tham gia Discord
+</a>
 
-    <div class="footer">
-        ZINMINI SHOP • REDIRECTING
-    </div>
+<div class="footer">
+ZINMINI SHOP • REDIRECTING
+</div>
 
 </div>
 
 <script>
 setTimeout(() => {
-    window.location.href = "https://discord.gg/kSp3z3crwa";
+window.location.href = "https://discord.gg/kSp3z3crwa";
 }, 5000);
 </script>
 
