@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -59,7 +60,7 @@ padding:8px;
 background:#111122;
 border:1px solid rgba(177,77,255,.2);
 border-radius:999px;
-color:#ffffff;
+color:white;
 font-size:12px;
 }
 
@@ -68,28 +69,45 @@ margin-top:15px;
 font-size:28px;
 font-weight:700;
 line-height:1.1;
-color:#ffffff;
+color:white;
 }
 
 .desc{
 margin-top:15px;
 font-size:13px;
-color:#ffffff;
+color:white;
 line-height:1.6;
 }
 
 .progress{
-margin-top:18px;
-height:5px;
+width:100%;
+height:6px;
 background:#1c1c30;
 border-radius:999px;
 overflow:hidden;
+margin-top:20px;
 }
 
 .progress-bar{
 height:100%;
+width:0%;
+border-radius:999px;
+background:linear-gradient(
+90deg,
+#5865F2,
+#8B5CF6,
+#C084FC
+);
+animation:loading 5s linear forwards;
+}
+
+@keyframes loading{
+from{
+width:0%;
+}
+to{
 width:100%;
-background:linear-gradient(90deg,#5865F2,#c084fc);
+}
 }
 
 .btn{
@@ -109,7 +127,7 @@ box-shadow:0 0 15px rgba(88,101,242,.35);
 margin-top:15px;
 font-size:10px;
 letter-spacing:2px;
-color:#ffffff;
+color:white;
 }
 </style>
 </head>
@@ -132,14 +150,15 @@ ZINMINI SHOP
 </div>
 
 <div class="desc">
-Đang đưa bạn vào server Discord của zinmini Shop...
+Đang đưa bạn vào server Discord của ZinMini Shop...
 </div>
 
 <div class="progress">
 <div class="progress-bar"></div>
 </div>
 
-<a class="btn" href="https://discord.gg/kSp3z3crwa">
+<a class="btn"
+href="https://discord.gg/kSp3z3crwa">
 🎮 Tham gia Discord
 </a>
 
@@ -151,9 +170,11 @@ ZINMINI SHOP • REDIRECTING
 
 <script>
 setTimeout(() => {
-window.location.href = "https://discord.gg/kSp3z3crwa";
+window.location.href =
+"https://discord.gg/kSp3z3crwa";
 }, 5000);
 </script>
 
 </body>
 </html>
+```
